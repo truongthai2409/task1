@@ -1,4 +1,4 @@
-import { Data } from "../../Data"
+import { Data } from "../types/Data"
 const getData = async (): Promise<Data[] | void> => {
     try {
         const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
