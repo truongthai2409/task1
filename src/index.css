@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* :where(.css-dev-only-do-not-override-3rel02).ant-table-wrapper
+  .ant-table-pagination.ant-pagination {
+  @apply flex justify-center; 
+  } */

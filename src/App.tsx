@@ -1,15 +1,14 @@
-// import { useState } from 'react'
-
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import Table from "./components/Table"
+import PostTable from "./components/postTable"
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
-// import moduleName from './index.css '
 const queryClient = new QueryClient()
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Table/>
+      <PostTable/>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   )
 }

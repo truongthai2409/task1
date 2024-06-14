@@ -1,10 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
 import { postService } from "../config/services/Table.service"
 
-export const useDeletePost = () => {
+export const useGetPost = () => {
   return useMutation({
-    mutationFn: (id: number) => {
-      return postService.deletePost(id);
+    mutationFn: () => {
+      return postService.getPost();
     },
   });
 };
